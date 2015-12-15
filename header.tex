@@ -1,0 +1,98 @@
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english, russian]{babel}
+
+\textheight=23cm
+\textwidth=16cm
+\oddsidemargin=0mm
+\topmargin=-1cm
+\parindent=24pt
+\tolerance=500
+\footnotesep=3ex
+\flushbottom
+\renewcommand{\baselinestretch}{1.4}
+
+%\interfootnotelinepenalty=10000
+
+\usepackage{amssymb, amsmath, textcomp}
+\usepackage{tabularx, graphicx}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+
+\usepackage{amsthm}
+\newtheorem*{definition}{Определение}
+\newtheorem*{statement}{Утверждение}
+
+\usepackage[]{cite}
+%\usepackage[backend=bibtex,sorting=none]{biblatex}
+%\addbibresource{thesis.bib}
+%\bibliographystyle{unsrt}
+\bibliographystyle{gost2008}
+
+% TODO: remove comments
+%\usepackage[onehalfspacing]{setspace}
+%\usepackage[14pt]{extsizes}
+
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+
+\usepackage{xcolor}
+
+\newcommand{\todo}[1]{\colorbox{yellow}{TODO: #1}}
+\newcommand{\todoxxx}[1]{\colorbox{orange}{TODO: #1}}
+\newcommand{\backup}[1]{\colorbox{green}{Backup here!}}
+
+\newcommand{\term}[1]{{\it #1}}
+\newcommand{\termeng}[2]{{\it #1} (англ. {\it #2})}
+
+\usepackage{listings}
+\renewcommand{\lstlistingname}{Листинг}
+
+\usepackage{fancyvrb}
+
+\usepackage{pgf,tikz}
+\usetikzlibrary{arrows}
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{gray}{rgb}{0.6,0.6,0.6}
+\definecolor{dark-gray}{rgb}{0.8,0.8,0.8}
+
+\lstset{frame=tb,
+  language=C++,
+  %aboveskip=3mm,
+  %belowskip=3mm,
+  %showstringspaces=false,
+  basicstyle={\small\tt},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=4,
+  captionpos=b,
+  inputencoding=utf8,
+  extendedchars=\true,
+  numbers=left,
+  morekeywords={push,mov,xchg,callq,add,jmp,function,false,true},
+}
+
+%xleftmargin=30pt,%
+%keepspaces=true,%
+%stepnumber=1,%
+
+\newcommand{\code}[1]{\lstinline[]!#1!}
+%\newcommand{\code}[1]{\texttt{#1}}
+
+\lstnewenvironment{listing}[2]{
+  \noindent
+  \minipage{\linewidth}
+  \vspace{\baselineskip}
+  \lstset{caption=#1,label=#2}
+  \renewcommand{\baselinestretch}{1.0}
+}{
+  \renewcommand{\baselinestretch}{1.4}
+  \endminipage
+  \smallskip
+}

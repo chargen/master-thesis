@@ -1,0 +1,377 @@
+% #############################################################################################################################################################################################################################################
+
+@PhdThesis{timur,
+  author = {Исходжанов, Т.Р.},
+  title  = {Автоматический поиск ошибок в~компьютерных программах с~применением динамического анализа},
+  school = {МФТИ},
+  year   = 2013,
+  language = "russian",
+}
+
+@inproceedings{kasan-mipt,
+  title={{Автоматический поиск ошибок в ядре операционной системы Linux с применением динамического анализа}},
+  author={Коновалов, А.Д. and Вьюков, Д.С.},
+  booktitle={Труды 56-й научной конференции МФТИ. Управление и прикладная математика. Т. 2},
+  pages={162--163},
+  year={2013},
+  organization={МФТИ},
+  language = "russian",
+}
+
+@inproceedings{ktsan-mipt,
+  title={{Автоматический поиск состояний гонок в ядре ОС Linux}},
+  author={Коновалов, А.Д. and Вьюков, Д.С.},
+  booktitle={Труды 57-й научной конференции МФТИ. Управление и прикладная математика. Т. 2},
+  pages={149--150},
+  year={2014},
+  organization={МФТИ},
+  language = "russian",
+}
+
+@misc{kasan-linuxcon,
+  title = {{KernelAddressSanitizer (KASan): a fast memory error detector for the Linux kernel}},
+  howpublished = "\url{https://events.linuxfoundation.org/sites/events/files/slides/LinuxCon%20North%20America%202015%20KernelAddressSanitizer.pdf}",
+}
+
+
+% #############################################################################################################################################################################################################################################
+
+% General.
+
+@article{therac25,
+  title={An investigation of the Therac-25 accidents},
+  author={Leveson, Nancy G and Turner, Clark S},
+  journal={Computer},
+  volume={26},
+  number={7},
+  pages={18--41},
+  year={1993},
+  publisher={IEEE}
+}
+
+@inproceedings{static-dynamic,
+  title={Static and dynamic analysis: Synergy and duality},
+  author={Ernst, Michael D},
+  booktitle={WODA~2003: ICSE Workshop on Dynamic Analysis},
+  pages={24--27},
+  year={2003},
+  organization={Citeseer}
+}
+
+@misc{wiki-linux,
+  title = {{Linux}},
+  howpublished = "\url{http://ru.wikipedia.org/wiki/Linux}",
+}
+
+@misc{wiki-fuzz-testing,
+  title = {{Fuzz testing}},
+  howpublished = "\url{http://ru.wikipedia.org/wiki/Fuzz\_testing}",
+}
+
+@misc{top-errors-2011,
+  title = {{2011 CWE/SANS Top 25 Most Dangerous Software Errors}},
+  howpublished = "\url{http://cwe.mitre.org/top25/}",
+}
+
+@misc{gcc-bug,
+  title = {{GCC Bugzilla — Bug 33498 — Optimizer (-O2) may convert a normal loop to infinite}},
+  howpublished = "\url{http://gcc.gnu.org/bugzilla/show\_bug.cgi?id=33498}",
+}
+
+@techreport{c++11-standard,
+  title={ISO/IEC 14882: 2011, Standard for Programming Language C++},
+  author={C++ Standards Committee and others},
+  year={2011},
+  institution={Technical report, 2011. http://www.open-std.org/jtc1/sc22/wg21}
+}
+
+@inproceedings{data-race-theory,
+  title={A theory of data race detection},
+  author={Banerjee, Utpal and Bliss, Brian and Ma, Zhiqiang and Petersen, Paul},
+  booktitle={Proceedings of the 2006 workshop on Parallel and distributed systems: testing and debugging},
+  pages={69--78},
+  year={2006},
+  organization={ACM}
+}
+
+@article{happens-before,
+  title={Time, clocks, and the ordering of events in a distributed system},
+  author={Lamport, Leslie},
+  journal={Communications of the ACM},
+  volume={21},
+  number={7},
+  pages={558--565},
+  year={1978},
+  publisher={ACM}
+}
+
+@misc{cve-mitre,
+  title = {{CVE-2015-7613}},
+  howpublished = "\url{https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-7613}",
+}
+
+@misc{cve-affected,
+  title = {{Linux Kernel 'ipc\_addid()' Function Local Memory Corruption Vulnerability}},
+  howpublished = "\url{http://www.securityfocus.com/bid/76977}",
+}
+
+@misc{memory-model,
+  title = {{Linux-Kernel Memory Model}},
+  howpublished = "\url{http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/n4444.html}",
+}
+
+@article{kernel-bugs,
+  title={Анализ типовых ошибок в драйверах операционной системы Linux},
+  author={ХОРОШИЛОВ, АВ and МУТИЛИН, ВС and НОВИКОВ, ЕМ},
+  journal={Труды Института системного программирования РАН},
+  volume={22},
+  year={2012},
+  publisher={Федеральное государственное бюджетное учреждение науки Институт системного программирования Российской академии наук}
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Dynamic instrumentation
+
+% User space
+
+@inproceedings{valgrind,
+ author = {Nicholas Nethercote and Julian Seward},
+ title =  {{Valgrind}: A Framework For Heavyweight Dynamic Binary Instrumentation},
+ booktitle = {Proceedings of the 2007 ACM SIGPLAN conference on Programming language design and implementation},
+ series = {PLDI~'07},
+ year = {2007},
+ isbn = {978-1-59593-633-2},
+ pages = {89--100},
+ location = {San Diego, California, USA},
+ doi = {http://doi.acm.org/10.1145/1250734.1250746},
+ publisher = {ACM},
+ address = {New~York, NY, USA},
+}
+
+@inproceedings{pin,
+ author = {Chi-Keung Luk and Robert Cohn and Robert Muth and Harish Patil and Artur Klauser and Geoff Lowney and Steven Wallace and Vijay Janapa Reddi and Kim Hazelwood},
+ title = {Pin: building customized program analysis tools with dynamic instrumentation},
+ booktitle = {Proceedings of the 2005 ACM SIGPLAN conference on Programming language design and implementation},
+ series = {PLDI~'05},
+ year = {2005},
+ isbn = {1-59593-056-6},
+ pages = {190--200},
+ location = {Chicago, IL, USA},
+ doi = {http://doi.acm.org/10.1145/1065010.1065034},
+ publisher = {ACM},
+ address = {New~York, NY, USA},
+}
+
+@PhdThesis{drio,
+  author = {Bruening, Derek},
+  title  = {Efficient, Transparent, and Comprehensive Runtime Code Manipulation},
+  school = {M.I.T.},
+  year   = 2004,
+}
+
+% Kernel space
+
+@inproceedings{pinos,
+  title={{PinOS: a programmable framework for whole-system dynamic instrumentation}},
+  author={Bungale, Prashanth P and Luk, Chi-Keung},
+  booktitle={Proceedings of the 3rd international conference on Virtual execution environments},
+  pages={137--147},
+  year={2007},
+  organization={ACM}
+}
+
+@misc{kprobes,
+  title = {{Kprobes}},
+  howpublished = "\url{https://sourceware.org/systemtap/kprobes/}",
+}
+
+@phdthesis{kerninst,
+  title={Fine-grained dynamic instrumentation of commodity operating system kernels},
+  author={Tamches, Ariel and Miller, Barton P},
+  year={2001},
+  school={University of Wisconsin--Madison}
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Compiler instrumentation
+
+% User space
+
+@misc{gcov,
+  title = {{gcov --- a Test Coverage Program}},
+  howpublished = "\url{http://gcc.gnu.org/onlinedocs/gcc/Gcov.html}",
+}
+
+@inproceedings{mudflap,
+  author = "Frank Ch. Eigler",
+  title = "Mudflap: pointer use checking for {C/C++}",
+  booktitle = {{GCC}~Developers Summit},
+  organization = "Red Hat Inc.",
+  year = 2003,
+}
+
+% Kernel space
+
+@misc{ftrace,
+  title = {{ftrace - Function Tracer}},
+  howpublished = "\url{https://www.kernel.org/doc/Documentation/trace/ftrace.txt}",
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Static instrumentation
+
+@inproceedings{pebil,
+  title={PEBIL: Efficient static binary instrumentation for linux},
+  author={Laurenzano, Michael A and Tikir, Mustafa M and Carrington, Laura and Snavely, Allan},
+  booktitle={Performance Analysis of Systems \& Software (ISPASS), 2010 IEEE International Symposium on},
+  pages={175--183},
+  year={2010},
+  organization={IEEE}
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Userspace: memory detectors
+
+@InProceedings{memcheck,
+ author = {Seward, Julian and Nethercote, Nicholas},
+ title = {Using {Valgrind} to detect undefined value errors with bit-precision},
+ booktitle = {USENIX Annual Technical Conference},
+ year = {2005},
+ pages = {17--30},
+}
+
+@inproceedings{asan,
+ author = {Serebryany, Konstantin and Bruening, Derek and Potapenko, Alexander and Vyukov, Dmitry},
+ title = {{AddressSanitizer: a fast address sanity checker}},
+ booktitle = {Proceedings of the 2012 USENIX conference on Annual Technical Conference},
+ series = {USENIX ATC'12},
+ year = {2012},
+ location = {Boston, MA},
+ pages = {28--28},
+ numpages = {1},
+ acmid = {2342849},
+ address = {Berkeley, CA, USA},
+}
+
+@misc{msan,
+  title = {{MemorySanitizer}},
+  howpublished = "\url{https://github.com/google/sanitizers/wiki}",
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Userspace: data race detectors
+
+@misc{tsan,
+  title = {{ThreadSanitizer}},
+  howpublished = "\url{https://github.com/google/sanitizers/wiki}",
+}
+
+@article{eraser,
+  title={Eraser: A dynamic data race detector for multithreaded programs},
+  author={Savage, Stefan and Burrows, Michael and Nelson, Greg and Sobalvarro, Patrick and Anderson, Thomas},
+  journal={ACM Transactions on Computer Systems (TOCS)},
+  volume={15},
+  number={4},
+  pages={391--411},
+  year={1997},
+  publisher={ACM}
+}
+
+@misc{helgrind,
+  title = {{Helgrind: a thread error detector}},
+  howpublished = "\url{http://valgrind.org/docs/manual/hg-manual.html}",
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Compilers
+
+@misc{clang,
+  title = {{clang: a C language family frontend for LLVM}},
+  howpublished = "\url{http://clang.llvm.org/}",
+}
+
+@misc{gcc,
+  title = {{GCC, the GNU Compiler Collection}},
+  howpublished = "\url{http://gcc.gnu.org/}",
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Kernel: fuzzers
+
+@misc{trinity,
+  title = {{Trinity: A Linux System call fuzz tester}},
+  howpublished = "\url{http://codemonkey.org.uk/projects/trinity/}",
+}
+
+@misc{syzkaller,
+  title = {{syzkaller: a distributed, unsupervised, coverage-guided Linux syscall fuzzer}},
+  howpublished = "\url{https://github.com/google/syzkaller}",
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Kernel: memory bug detectors
+
+@misc{kmemcheck,
+  title = {{GETTING STARTED WITH KMEMCHECK}},
+  howpublished = "\url{https://www.kernel.org/doc/Documentation/kmemcheck.txt}",
+}
+
+@misc{kmemcheck-presentation,
+  title = {{Finding errors with kmemcheck}},
+  howpublished = "\url{http://www.diku.dk/hjemmesider/ansatte/julia/cocciwk/nossum.pdf}",
+}
+
+@misc{kasan,
+  title = {{KernelAddressSanitizer: a fast memory error detector for the Linux kernel}},
+  howpublished = "\url{https://github.com/google/kasan/wiki}",
+}
+
+% #############################################################################################################################################################################################################################################
+
+% Kernel: data race detectors
+
+@misc{kernel-strider,
+  title = {{KernelStrider}},
+  howpublished = "\url{https://github.com/euspectre/kernel-strider}",
+}
+
+@inproceedings{race-hound,
+  title={On the Implementation of Data-Breakpoints Based Race Detection for Linux Kernel Modules},
+  author={Komarov, Nikita},
+  booktitle={Proceedings of the Spring/Summer Young Researchers’ Colloquium on Software Engineering},
+  number={7},
+  year={2013},
+  organization={Федеральное государственное бюджетное учреждение науки Институт системного программирования Российской академии наук}
+}
+
+@inproceedings{cpachecker,
+  title={An approach to lightweight static data race detection},
+  author={Vadim, Mutilin and Alexey, Khoroshilov},
+  booktitle={Proceedings of the Spring/Summer Young Researchers’ Colloquium on Software Engineering},
+  number={8},
+  year={2014},
+  organization={Федеральное государственное бюджетное учреждение науки Институт системного программирования Российской академии наук}
+}
+
+@misc{ktsan,
+  title = {{KernelThreadSanitizer: a fast data race detector for the Linux kernel}},
+  howpublished = "\url{https://github.com/google/ktsan/wiki}",
+}
+
+@article{cpa-lockator,
+  title={Метод легковесного статического анализа для поиска состояний гонок},
+  author={Андрианов, П.С. and Мутилин, В.С. and Хорошилов, А.В.},
+  journal={Труды Института системного программирования РАН},
+  volume={27},
+  number={5},
+  year={2015},
+  publisher={Федеральное государственное бюджетное учреждение науки Институт системного программирования Российской академии наук}
+}
